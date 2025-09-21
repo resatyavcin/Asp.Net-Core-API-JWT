@@ -10,6 +10,6 @@ namespace AuthServer.Core.models
     {
         public string UserId { get; set; }
         public string Code { get; set; }
-        public DateTime Expration { get; set; }
+        public DateTime Expiration { get; set; }
     }
 }
