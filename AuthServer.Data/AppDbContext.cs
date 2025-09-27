@@ -17,10 +17,11 @@ namespace AuthServer.Data
         }
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<UserRefreshToken> userRefreshToken { get; set; }
+        public DbSet<UserRefreshToken> UserRefreshToken { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            builder.ApplyConfigurationsFromAssembly(GetType().Assembly);
             base.OnModelCreating(builder);
         }
     }
